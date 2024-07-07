@@ -1,0 +1,32 @@
+
+<div class="container" style="text-align: center;">
+    <br>
+    <p>Pizzeria now gives you options to build your own pizza. Customize your pizza by choosing ingredients from the list given below.</p>
+    <br>
+    <table class="table table-bordered table-striped" style="padding: 20px;">
+        <tr *ngFor = "let item of ingredientslist">
+            <td>
+                <img src={{item.image}} width="90px"/>
+            </td>
+            <td>
+                <b>{{item.tname}}</b>
+            </td>
+            <td>
+                <b>Rs. {{item.price}}</b> 
+            </td>
+            <td>
+                <input type="checkbox"  value={{item.price}} name="isActive" (change)="getPrice($event,item.price)">&nbsp; <label style="color: salmon;">Add</label>
+            </td>
+        </tr>
+        <tr style="color: purple;">
+            <td colspan="4">
+                <h3>Total Cost: {{total}} </h3>
+            </td>
+        </tr>
+    </table>
+    <button type="button" class="btn btn-success" (click)="placeorder()">Place Order</button>
+    <!-- Later fix the alert box -->
+    <!-- <div id="placeorder" class="alert alert-success"> Order Placed Successfully </div> -->
+
+
+</div>

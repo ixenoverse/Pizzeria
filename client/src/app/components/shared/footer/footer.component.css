@@ -1,0 +1,23 @@
+.footer {
+    text-align: center;
+    position: relative;
+    right: 0;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 30px;
+    background-color: rgb(248, 235, 116);
+    vertical-align: middle;
+    align-items: center;
+    color: black;
+  }
+/* 
+  .footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #f3b455e5;
+    text-align: center;
+  } */

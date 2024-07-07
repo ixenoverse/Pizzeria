@@ -1,0 +1,23 @@
+
+<br>
+<div class="container" >
+    <div class="row" style="align-content: space-around;">
+    <div class="card-group" style="align-content: space-around;" >
+        <div style="margin-left: auto;" *ngFor="let item of pizzalist">
+            <div class="card" style="width: 30rem; align-content: space-between;" >
+                <img src={{item.image}} class="card-img-top" alt="..." width="350px"  style="align-content: center;">
+                <div class="card-body" style="text-align: justify;">
+                    <h5 class="card-title">{{item.name}}</h5>
+                    <label class="type-color"></label>
+                    <label><b>Rs. {{item.price}}</b></label>
+                    <p class="card-text">{{item.description}}</p>
+                    <p class="card-text"><b>Ingredients: </b>{{item.ingredients}}</p>
+                    <p class="card-text"><b>Toppings: </b>{{item.topping}}</p>
+                    <button (click)="addtocart()" (change)="getVal(item.price)" value={{item.price}} class="btn btn-warning" style="color: white;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br><br>

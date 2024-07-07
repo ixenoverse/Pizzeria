@@ -1,0 +1,14 @@
+.card-columns {
+    display: inline-block;
+}
+
+.card {
+    border: none;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
